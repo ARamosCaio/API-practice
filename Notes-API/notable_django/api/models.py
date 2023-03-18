@@ -5,5 +5,5 @@ class Note(models.Model):
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     
-    def __str__(self):  # sourcery skip: replace-interpolation-with-fstring
+    def __str__(self):    # sourcery skip: replace-interpolation-with-fstring
         return '%s %s' % (self.title, self.body)
