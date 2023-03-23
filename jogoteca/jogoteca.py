@@ -19,5 +19,10 @@ def greeting():
     game_list = [game1, game2, game3]
     return render_template('game-list.html', title='Jogos', games = game_list)
 
+@app.route('/newgame')
+
+def new_game ():
+    return render_template("new_game.html", title='Novo Jogo')
+
 
 app.run()
